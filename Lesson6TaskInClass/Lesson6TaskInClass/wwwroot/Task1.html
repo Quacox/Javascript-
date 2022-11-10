@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        const countries = [];
+        function implementSelect()
+        {
+            var entry = document.getElementById("txtentry").value;
+            countries.push(entry);
+            console.log(countries);
+            var dropdown = document.getElementById("dropdown");
+            var optn = countries[countries.length-1];
+            var element = document.createElement("option");
+            element.textContent = optn;
+            element.value = optn;
+            dropdown.appendChild(element);
+            txtentry.value = "";
+        }
+    </script>
+    <input type="text" id="txtentry" />
+    <button onclick="implementSelect()">Add a country</button><br />
+    <select id="dropdown"></select>
+</body>
+</html>

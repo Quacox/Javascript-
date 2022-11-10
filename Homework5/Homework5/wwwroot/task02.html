@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JavaScript.js"> </script>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td> Enter number a<input type="text" id="a" /> </td>
+            </tr>
+            <tr>
+                <td> Enter number b <input type="text" id="b" /> </td>
+            </tr>
+            <tr>
+                <td>
+                    <select id="Opertaors">
+                        <option value="+">+</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                        <option value="-">-</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div> <button type="button" onclick="Sum(document.getElementById('a').value, document.getElementById('b').value)" />Calculate</div>
+    </form>
+    <div> Result   <input type="text" id="result" /> </div>
+   
+</body>
+</html>
